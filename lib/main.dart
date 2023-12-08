@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
               ),
-              textAlign: TextAlign.center, // Align the text to the center
+              textAlign: TextAlign.center,
             ),
             Text(
               'It\'s simple: eat slowly for ten minutes, rest for five, then finish your meal',
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontSize: 25,
                 fontWeight: FontWeight.w300,
               ),
-              textAlign: TextAlign.center, // Align the text to the center
+              textAlign: TextAlign.center, 
             ),
             SizedBox(height: 20),
             Center(
@@ -104,17 +104,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 autoStart: false,
                 onStart: () {
                   debugPrint('Countdown Started');
-                  if (_isSoundOn) {
-                    // Play sound when countdown starts
-                    // Add your sound playing logic here
-                  }
+                  
                 },
                 onComplete: () {
                   debugPrint('Countdown Ended');
-                  if (_isSoundOn) {
-                    // Play sound when countdown ends
-                    // Add your sound playing logic here
-                  }
+                 
                 },
                 onChange: (String elapsed) {
                   // Parse the elapsed time string to a Duration
